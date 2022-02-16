@@ -1,4 +1,4 @@
-<img src="cb.png" alt="Citybound" width="192"/>
+<img src="https://cdn.jsdelivr.net/gh/aclk/citybound/cb.png" alt="Citybound" width="192"/>
 
 Citybound is a city building game with a focus on realism, collaborative planning and simulation of microscopic details. It is independently developed, open source and funded through Patreon.
 

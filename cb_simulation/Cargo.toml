@@ -10,7 +10,7 @@ ordered-float = "1.0.1"
 itertools = "0.7.8"
 rand = { version = "0.5", features = ["stdweb"] }
 # waiting for image dep to be optional on crates
-noise = { git = "https://github.com/Razaekel/noise-rs", rev="4606a00", default-features = false }
+noise = { git = "https://github.com/Razaekel/noise-rs", rev="92ec3c1", default-features = false }
 fnv = "1.0.6"
 roaring = "0.5.2"
 serde = "1.0"

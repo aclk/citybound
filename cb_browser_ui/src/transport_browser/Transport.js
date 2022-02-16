@@ -1,13 +1,16 @@
 import colors from '../colors';
 import renderOrder from '../renderOrder';
-import carMesh from './carMesh';
+import {carMesh, busMesh, truckMesh, uteMesh} from './Mesh';
 import { RenderLayer } from '../browser_utils/Utils';
 import React from 'react';
 
 export const initialState = {
     rendering: {
         staticMeshes: {
-            car: carMesh
+            car: carMesh,
+            bus: busMesh,
+            truck: truckMesh,
+            ute: uteMesh,
         },
         laneAsphaltGroups: new Map(),
         laneMarkerGroups: new Map(),

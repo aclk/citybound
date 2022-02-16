@@ -3,8 +3,8 @@ const { execSync, spawnSync } = require('child_process');
 
 const NIGHTLY_VERSION = "nightly-2020-03-10";
 const NIGHTLY_VERSION_BROWSER = "nightly-2020-03-10";
-const CARGO_WEB_VERSION = "0.6.24";
-let quiet = process.argv[2] == "-q";
+const CARGO_WEB_VERSION = "0.6.26";
+let quiet = process.argv[2] === "-q";
 
 let rustupV;
 try {
@@ -88,7 +88,7 @@ if (checkCargoWeb(CARGO_WEB_VERSION)) {
 
     let platform = require("os").platform();
 
-    if (platform == "linux" || platform == "darwin") {
+    if (platform === "linux" || platform === "darwin") {
         let url = "https://github.com/koute/cargo-web/releases/download/" + CARGO_WEB_VERSION + "/cargo-web-x86_64-" + (platform == "linux" ? "unknown-linux-gnu.gz" : "apple-darwin.gz");
         console.log("Downloading cargo-web executable from " + url);
         console.log(execSync('curl -L ' + url + ' | gzip -d > cargo-web', { encoding: 'utf8' }));
